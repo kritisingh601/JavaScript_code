@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function printRepeating(arr, size)
+{
+	let i;
+	document.write("The repeating elements are:" + "<br>");
+	for (i = 0; i < size; i++) {
+		var abs_value = Math.abs(arr[i]);
+		if (arr[abs_value] >= 0)
+			arr[abs_value] = -arr[abs_value];
+		else
+			document.write(abs_value + " ");
+	}
+}
+	let arr = [ 1, 2, 3,3,4,5,6,7,8,9,10,......,101];
+	let arr_size = arr.length;
+	printRepeating(arr, arr_size);
+</script>
+</head>
+<body>
+
+<h2> Third Question </h2>
+
+<p id="demo"> Repeating Number </p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
