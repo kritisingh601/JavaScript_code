@@ -1,0 +1,11 @@
+$.ajax({
+      type: "GET",
+      url: "www.example.com/api/get/1",
+      success: function(data) {
+         console.log(data)
+      },
+      error: function (xhr, ajaxOptions, thrownError) {
+        console.log(xhr.status);
+        console.log(thrownError);
+      }
+});\
